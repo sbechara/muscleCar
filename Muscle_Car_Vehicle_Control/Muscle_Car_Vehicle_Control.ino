@@ -70,7 +70,7 @@ void loop()
   uint8_t buf[VW_MAX_MESSAGE_LEN]; // a buffer for incoming data
   uint8_t buflen = VW_MAX_MESSAGE_LEN; // length of the buffer
 
-  // The if statement below will check to see if the received data makes any sense. In other words, is the incoming data any good, or is it just scrambled nonsense?
+  // The if statement below will check to see if the received data makes Weany sense. In other words, is the incoming data any good, or is it just scrambled nonsense?
   if (vw_get_message(buf, &buflen))
   {
     // If the data is all good, then we can run the following for loop. The purpose of this for loop is to store the message into a data array.

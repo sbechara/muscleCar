@@ -25,7 +25,6 @@
 // We must define the pin to which the RF transmitter is connected. We have already hooked it up to digital pin 3.
 // We must also define a variable for the message we want to send. This will be a character array (basically a string) that has a size of 10.
 // Lastly, we must define the rate at which we want to send data. We will set this to 2000 bits/second.
-
 int txPin = 3;
 char msg[10];
 int sendRate = 2000;
@@ -35,13 +34,11 @@ int sendRate = 2000;
 // do any hard math. Nice, right? Since we are hooking up two muscle sensors, let's define them as left and right and hook them up to analog
 // pin A0 and A3, respectively.
 // See page 6 of this pdf to see what filtering is used on the muscle sensors! https://cdn-shop.adafruit.com/product-files/2699/AT-04-001.pdf
-
 #define leftSensor A0
 #define rightSensor A3
 
 // We need to make sure we don't forget the LEDs!
 // Let's let the left LED be on pin 9 and the right LED on pin 11. We will define this similar to how we did it for the RF transmitter pin.
-
 int leftLED = 9;
 int rightLED = 11;
 

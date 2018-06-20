@@ -4,6 +4,8 @@ Use the files included in this folder to test your muscle sensor placement and m
 ## Hookup Guide
 In order to determine your threshold and make sure that your muscle sensors are working, we first need to wire everything up. For this, we are going to wire up 2 LED lights and the muscle sensors to the Arduino. The lights will help give us visual feedback when our threshold has been crossed (equivalent to starting the motors for the muscle car) See the wiring diagram and table below to make sure everything is hooked up appropriately. In order to make the following connections, you must use your breadboard correctly! If you aren't sure, ask.
 
+**NOTE: You should do the testing while the Arduino is connected to the Pi-Top via usb**
+
 ### Hookup Schematic
 ![diagram](testSensorSchematic_bb.png "Schematic of wiring")
 

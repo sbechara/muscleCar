@@ -9,7 +9,7 @@ The sub-folders each contain different code and it is vitally important that you
 ### VirtualWireLibrary
 This folder contains the library (a .zip file) that you *must* download and load into Arduino before you can get anything else to work!
 
-Once you download the zip file, follow these instructions explaining how to add a .zip library to arduino: [Library](https://www.arduino.cc/en/Guide/Libraries "How to add .zip library to Arduino")
+Once you download the zip file, follow these instructions explaining how to add a .zip library to arduino: [How to add .zip library to Arduino](https://www.arduino.cc/en/Guide/Libraries "How to add .zip library to Arduino")
 
 ### Muscle_Car_Human_Control
 As the folder states, the code contained in this subfolder is for loading onto the Arduino that is going to be connected to your body!

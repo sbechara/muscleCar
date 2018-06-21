@@ -87,31 +87,33 @@ void loop()
   
   leftReading = analogRead(leftSensor);
   rightReading = analogRead(rightSensor);
-  Serial.println(leftReading);
   
   // These values from the muscle sensor can vary greatly with fine mhttps://en.wikipedia.org/wiki/American_wire_gaugeovements of a muscle, which makes the vehicle control hard.
   // We want to make the control of the vehicle a bit easier so we will use on/off control of the motors!
-  // The analog to digital converters that we are using are 10 bit, so the values from the sensors will be between 0 and 1023. When the value is between 0 and 250,
-  // we will set the speed to zero. When the value is above 250, we will set the motor to full speed! The speed we set can be messed around with and the same with the 
-  // lower set point of 250. This will require the use of if statements! We want to send values that can work with the analogWrite function, which takes values between
+  // The analog to digital converters that we are using are 10 bit, so the values from the sensors will be between 0 and 1023. When the value is between 0 and threshold,
+  // we will set the speed to zero. When the value is above threshold, we will set the motor to full speed! The speed we set can be messed around with and the same with the 
+  // threshold. This will require the use of if statements! We want to send values that can work with the analogWrite function, which takes values between
   // 0 (no speed) and 255 (full speed).
 
-  if (leftReading >= 0 && leftReading <= 250)
+  int threshold = 250; // remember: this can be tweaked from 0 to 1023
+  int motorSpeed = 255; // remember: this can be tweaked from 0 to 255
+
+  if (leftReading >= 0 && leftReading <= threshold)
   {
     leftMotorSpeed = 0;
   }
   else
   {
-    leftMotorSpeed = 255;
+    leftMotorSpeed = motorSpeed;
   }
   
-  if (rightReading >= 0 && rightReading <= 250)
+  if (rightReading >= 0 && rightReading <= threshold)
   {
     rightMotorSpeed = 0;
   }
   else
   {
-    rightMotorSpeed = 255;
+    rightMotorSpeed = motorSpeed;
   }
 
   Serial.println("Muscle sensor readings and corresponding speeds!");

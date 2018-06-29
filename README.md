@@ -1,6 +1,10 @@
 # Muscle Car
 This repository holds all of the information necessary to build your own electromyogram controlled RC car!
 
+## **POST CAMP SURVEY**
+Please go to this link: https://goo.gl/forms/pume1Vk2j61by3nA2
+to take the post camp survey! Thanks!
+
 ## How to Use This Repository
 Before you can get your completed muscle car using wireless, it is necessary to make sure that you have a good understanding of how the muscle sensors work and how to read from them and how your motors work and how to turn them. To help you, I have created different folders that contain little bits of different code.
 
